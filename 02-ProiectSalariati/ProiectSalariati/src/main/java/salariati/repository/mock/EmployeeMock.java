@@ -50,7 +50,8 @@ public class EmployeeMock implements EmployeeRepositoryInterface {
 
 	@Override
 	public void modifyEmployee(Employee oldEmployee, Employee newEmployee) {
-		// TODO Auto-generated method stub
+		employeeList.remove(oldEmployee);
+		employeeList.add(newEmployee);
 	}
 
 	@Override
